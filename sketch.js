@@ -68,9 +68,8 @@ function siguienteGeneracion(){
         tablero_siguiente[x][y] = 0;
       }
 
-      //si una celula cancerigena tiene
-      //mas de 3 vecinos cancerigenos o menos de 2 muere
-      // == 3 0 > 3
+      //si una celula cancerigena tiene exactamente
+      //3 vecinos cancerigenos o menos de 2 muere
       else if(celda == 10 &&(cancer == 3 || cancer < 2)){
         tablero_siguiente[x][y] = 0;
       }
